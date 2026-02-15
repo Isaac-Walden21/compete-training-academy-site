@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 import { LeadForm } from "@/components/forms/LeadForm";
 import { PageIntro } from "@/components/sections/PageIntro";
@@ -30,7 +31,9 @@ export default function BookSessionPage() {
 
           <article>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-gold">Manual Request</p>
-            <LeadForm sourcePage="book-session" defaultSubject="Book A Session Request" formId="lead-form" />
+            <Suspense fallback={<div className="h-[520px] rounded-3xl border border-navy/10 bg-white p-6 shadow-lg" />}>
+              <LeadForm sourcePage="book-session" defaultSubject="Book A Session Request" formId="lead-form" />
+            </Suspense>
           </article>
         </div>
       </section>
