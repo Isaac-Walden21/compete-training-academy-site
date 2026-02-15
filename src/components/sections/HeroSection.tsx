@@ -1,7 +1,8 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import { useRef } from "react";
 
 import { Button } from "@/components/ui/Button";
 import { assetById } from "@/content/assets";
@@ -13,9 +14,19 @@ interface HeroSectionProps {
 
 export function HeroSection({ onPreOrderClick }: HeroSectionProps) {
   const reduce = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"]
+  });
+  const imageParallaxY = useTransform(scrollYProgress, [0, 1], [0, 64]);
+  const textParallaxY = useTransform(scrollYProgress, [0, 1], [0, 26]);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-[#f7f8fa] to-[#eef1f4] py-20 text-ink">
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden bg-gradient-to-br from-white via-[#f7f8fa] to-[#eef1f4] py-20 text-ink"
+    >
       <motion.div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(13,71,161,0.14),transparent_45%)]"
         initial={reduce ? undefined : { scale: 1, opacity: 0.45 }}
@@ -28,6 +39,7 @@ export function HeroSection({ onPreOrderClick }: HeroSectionProps) {
           animate={reduce ? undefined : { opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="space-y-6 rounded-3xl border border-navy/12 bg-white/82 p-6 shadow-2xl backdrop-blur-sm md:p-8"
+          style={reduce ? undefined : { y: textParallaxY }}
         >
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-gold">{bookDescription.subhead}</p>
           <h1 className="text-balance font-display text-6xl font-semibold uppercase leading-[0.92] tracking-[0.08em] text-navy md:text-7xl lg:text-8xl">
@@ -45,6 +57,7 @@ export function HeroSection({ onPreOrderClick }: HeroSectionProps) {
           animate={reduce ? undefined : { opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.65, ease: "easeOut", delay: 0.1 }}
           className="relative rounded-2xl border border-navy/18 bg-white/60 p-3 shadow-2xl backdrop-blur-sm"
+          style={reduce ? undefined : { y: imageParallaxY }}
         >
           <Image
             src={assetById["TODO-ASSET-001"].current}

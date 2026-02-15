@@ -33,7 +33,7 @@ export const placeholderAssets: PlaceholderAsset[] = [
   },
   {
     id: "TODO-ASSET-006",
-    current: "/images/source/01_Compete_Logo.jpg",
+    current: "/images/source/compete-training-logo-final.png",
     futureTarget: "/images/og/og-default.jpg",
     alt: "Compete Training Academy logo"
   }

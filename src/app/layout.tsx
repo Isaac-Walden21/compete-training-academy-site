@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { ScrollToTopButton } from "@/components/layout/ScrollToTopButton";
 import { brand } from "@/content/site";
 
 import "./globals.css";
@@ -35,7 +36,7 @@ const orgSchema = {
   "@type": "Organization",
   name: brand.name,
   url: siteUrl,
-  logo: `${siteUrl}/images/source/01_Compete_Logo.jpg`,
+  logo: `${siteUrl}/images/source/compete-training-logo-final.png`,
   description: "Mindset coaching and training academy",
   sameAs: [
     "https://facebook.com/competeacademy",
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <PageTransition>
           <main>{children}</main>
         </PageTransition>
+        <ScrollToTopButton />
         <Footer />
         <Analytics />
       </body>

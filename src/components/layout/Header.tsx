@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useScroll, useSpring } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +16,12 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
+  const { scrollYProgress } = useScroll();
+  const progressScaleX = useSpring(scrollYProgress, {
+    stiffness: 180,
+    damping: 28,
+    mass: 0.25
+  });
 
   useEffect(() => {
     const onScroll = () => {
@@ -63,7 +70,7 @@ export function Header() {
       <div className="mx-auto flex w-[min(1500px,92vw)] items-center justify-between gap-6 py-4">
         <Link href="/" className="group flex flex-col">
           <Image
-            src="/images/source/01_Compete_Logo.jpg"
+            src="/images/source/compete-training-logo-final.png"
             alt="Compete Training Academy logo"
             width={116}
             height={78}
@@ -93,7 +100,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "transition-colors hover:text-gold",
+                      "relative py-1 transition-colors hover:text-gold after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100",
                       isActive ? "text-gold" : "text-navy"
                     )}
                   >
@@ -134,6 +141,11 @@ export function Header() {
           })}
         </ul>
       </nav>
+      <motion.div
+        aria-hidden
+        className="h-[2px] origin-left bg-gradient-to-r from-gold via-[#f0c799] to-gold/40"
+        style={{ scaleX: progressScaleX }}
+      />
     </header>
   );
 }

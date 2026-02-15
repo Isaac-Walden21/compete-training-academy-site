@@ -1,3 +1,5 @@
+"use client";
+
 import type { ButtonHTMLAttributes } from "react";
 
 import { cn } from "@/lib/utils";
@@ -26,7 +28,7 @@ const variantStyles: Record<ButtonVariant, string> = {
 
 export function buttonStyles(variant: ButtonVariant = "primary", size: ButtonSize = "md") {
   return cn(
-    "cinematic-glow inline-flex items-center justify-center gap-2 rounded-full font-semibold uppercase tracking-[0.12em] transition-all duration-300 ease-in-out",
+    "cinematic-glow button-sheen relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full font-semibold uppercase tracking-[0.12em] transition-all duration-300 ease-in-out",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
     "active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50",
     sizeStyles[size],

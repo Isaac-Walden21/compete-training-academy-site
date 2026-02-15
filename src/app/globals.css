@@ -129,6 +129,28 @@ main {
   border-color: rgba(201, 148, 92, 0.5);
 }
 
+.button-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-130%);
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+  pointer-events: none;
+}
+
+.button-sheen:hover::after {
+  animation: button-sheen-sweep 680ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes button-sheen-sweep {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
