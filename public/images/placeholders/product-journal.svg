@@ -1,0 +1,7 @@
+<svg width="800" height="640" viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily journal placeholder">
+  <rect width="800" height="640" fill="#d8c3ab"/>
+  <rect x="210" y="90" width="380" height="470" rx="16" fill="#ffffff"/>
+  <rect x="190" y="90" width="16" height="470" fill="#333"/>
+  <text x="400" y="290" text-anchor="middle" fill="#003366" font-size="42" font-family="Arial">COMPETE</text>
+  <text x="400" y="335" text-anchor="middle" fill="#003366" font-size="28" font-family="Arial">Daily Journal</text>
+</svg>

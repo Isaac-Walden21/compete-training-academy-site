@@ -1,0 +1,7 @@
+<svg width="800" height="640" viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Winning mindset book placeholder">
+  <rect width="800" height="640" fill="#1f2a45"/>
+  <rect x="220" y="70" width="360" height="510" rx="10" fill="#0f1727" stroke="#C9945C" stroke-width="4"/>
+  <text x="400" y="260" text-anchor="middle" fill="#ffffff" font-size="38" font-family="Arial">Winning</text>
+  <text x="400" y="312" text-anchor="middle" fill="#ffffff" font-size="38" font-family="Arial">Mindset</text>
+  <text x="400" y="365" text-anchor="middle" fill="#C9945C" font-size="22" font-family="Arial">Book Placeholder</text>
+</svg>

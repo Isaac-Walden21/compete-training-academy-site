@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hero placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B3E5FC"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="300" cy="250" r="150" fill="rgba(255,255,255,0.25)"/>
+  <circle cx="880" cy="300" r="180" fill="rgba(255,255,255,0.2)"/>
+  <rect x="180" y="420" width="320" height="360" rx="18" fill="rgba(0,0,0,0.22)"/>
+  <rect x="700" y="380" width="320" height="400" rx="18" fill="rgba(0,0,0,0.22)"/>
+  <text x="600" y="120" text-anchor="middle" fill="#ffffff" font-size="52" font-family="Georgia, serif">Founders Hero Placeholder</text>
+  <text x="600" y="170" text-anchor="middle" fill="#ffffff" font-size="28" font-style="italic" font-family="Georgia, serif">Trey Kaufman-Renn and Jordan Delks</text>
+</svg>

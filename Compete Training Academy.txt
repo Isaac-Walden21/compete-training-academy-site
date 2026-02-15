@@ -1,0 +1,1013 @@
+# Compete Training Academy - React Rebuild Specification
+
+**Website**: https://www.competetrainingacademy.org/  
+**Current Platform**: Squarespace  
+**Target**: React Application  
+**Purpose**: Modern, scalable rebuild for client sale
+
+---
+
+## 1. SITE ARCHITECTURE & STRUCTURE
+
+### Pages/Routes:
+- **Home** - GET BETTER Book Pre-Order Landing
+- **Jordan and Courtney Delks** - Founder Bio Page
+- **Get Better** - Book Details Page
+- **About** - Academy Information
+- **Train** - Training Programs
+- **Mindset Coaching** - Coaching Services
+- **Certifications** - Certification Programs
+- **Library** - Resources & Tools
+- **Speaking** - Speaking Engagements
+- **Contact / Book a Session** - Contact & Booking
+- **Events** - Upcoming Events
+
+### Main Navigation Menu:
+```
+Logo | Jordan and Courtney Delks | Get Better | About | Train | 
+Mindset Coaching | Certifications | Library | Speaking | 
+Contact / Book a Session | Events
+```
+
+---
+
+## 2. COLOR PALETTE & DESIGN SYSTEM
+
+### Primary Colors:
+```
+Dark Navy Blue:    #003366  (headings, text, navigation)
+Gold/Tan:          #C9945C  (CTA buttons, accents)
+Light Cyan:        #B3E5FC  (gradient start)
+Deep Blue:         #0D47A1  (gradient end)
+White:             #FFFFFF  (main backgrounds)
+Light Gray:        #F5F5F5  (subtle backgrounds)
+Black:             #000000  (body text)
+```
+
+### Gradients:
+- **Hero Gradient**: Light cyan (#B3E5FC) → Deep blue (#0D47A1)
+- **Button Hover**: Darker gold with shadow effect
+
+---
+
+## 3. TYPOGRAPHY SYSTEM
+
+### Font Families:
+- **Headers/Titles**: "Cormorant Garamond" or similar elegant serif
+- **Body Text**: "Montserrat", "Raleway", or clean sans-serif
+- **Button Text**: Sans-serif, all caps, bold
+
+### Font Sizes & Hierarchy:
+```
+H1 (Hero Title):     60-80px, bold, dark navy, uppercase
+H2 (Section Title):  40-50px, dark navy
+H3 (Subsection):     28-32px, dark navy
+Body Copy:           16-18px, dark navy/charcoal
+Button Text:         14-16px, bold, uppercase
+Small Text/Footer:   12-14px
+```
+
+---
+
+## 4. HOMEPAGE DETAILED BREAKDOWN
+
+### Section 1: Hero Section
+**Layout**: Two-column responsive grid (left text, right image)
+
+**Left Column - Text Content:**
+```
+H1: "GET BETTER"
+Subtext: "PRE-ORDER NOW"
+
+Paragraph 1:
+"Get Better: Actualize Your True Self is a candid look at what it 
+takes to grow from the inside out. Written through the lived experience 
+of mindset coach Jordan Delks and athlete Trey Kaufman-Renn, this book 
+brings the reader into the real work of personal change. It is built on 
+honest conversations, shared struggles, and the steady pursuit of a 
+life rooted in purpose."
+
+Paragraph 2:
+"Jordan and Trey show how growth begins with clarity. You learn who 
+you are, what drives you, and how your design shapes the path ahead. 
+From there, they guide you through the process of forming a clear 
+direction so your actions match the person you want to become. They 
+share stories of training sessions, honest reflections, and moments 
+when they had to reset and make new choices. Each chapter shows how 
+mindset shifts can influence performance, relationships, and daily habits."
+
+CTA Button: "PRE-ORDER BOOK"
+Style: Gold/tan (#C9945C), rounded pill, large, hover effect
+```
+
+**Right Column - Image:**
+```
+Image: Two men (Trey Kaufman-Renn & Jordan Delks) with basketballs
+Background: Light blue gradient overlay
+Text Overlay: "Trey Kaufman-Renn and Jordan Delks" (white, italic, centered)
+Additional: COMPETE logo badges visible on shirts
+```
+
+### Section 2: Contact Form & Products
+**Layout**: Two-column responsive grid (left form, right images)
+
+**Left Column - Form:**
+```
+Form Fields:
+  1. Name (First Name + Last Name - required)
+  2. Email (required, mailing list checkbox)
+  3. Newsletter Signup Checkbox: "SIGN UP FOR NEWS AND UPDATES"
+  4. Subject (required, text input)
+  5. Message (required, textarea)
+  6. Pricing Options (Radio Group):
+     - "I WANT FULL PRICE $100"
+     - "I WANT DISCOUNT $70 + FREE BOOK"
+  7. Submit Button (gold/tan pill button, text: "SUBMIT")
+
+Form Styling:
+  - Input fields: underline bottom border style
+  - Labels: dark navy text
+  - Required indicators: "(required)" in parentheses
+  - Checkbox options: bordered/outlined style
+  - Focus states: color highlight on input
+```
+
+**Right Column - Product Images:**
+```
+Product Photography (on wooden background):
+  1. COMPETE Daily Journal (spiral bound, white cover)
+  2. COMPETE Winners Manual (spiral bound, white cover)
+  3. Dream Szn Strategic Plan (spiral binder)
+  4. "Winning Mindset" Book (dark book cover with founder photos)
+
+Background: Wooden surface with white/neutral backdrop
+Additional: Curtains/drapes visible in background for professional look
+```
+
+### Section 3: Footer
+```
+Content:
+  Copyright Text: "© 2025 Compete Training Academy | Faith. Mindset. Performance."
+  Tagline: "Faith. Mindset. Performance."
+  Icon: Small circular podcast/audio icon centered
+
+Styling:
+  - Background: White or near-white
+  - Text: Dark navy, small (12-14px)
+  - Alignment: Centered
+  - Spacing: Generous vertical padding
+```
+
+---
+
+## 5. IMAGES & VISUAL ASSETS INVENTORY
+
+### Critical Images to Source/Recreate:
+
+**1. Hero Image**
+- Subjects: Two professional men with basketballs
+- Background: Light blue gradient
+- Quality: Professional photography, high-resolution
+- Dimensions: ~600px wide, responsive height
+- Text Overlay: Names of founders in white, italic font
+
+**2. Product Images (Set)**
+- Daily Journal: Spiral-bound notebook, white cover
+- Winners Manual: Spiral-bound notebook, white cover  
+- Strategic Plan: Binder with branded design
+- Book: "Winning Mindset" with professional cover design
+- Photography Setup: Wooden surface, studio lighting, curtain backdrop
+- Total: 4 product images needed
+
+**3. Logo**
+- COMPETE Brand Logo: Top-left navigation
+- Circular Badge Icon: Appears on founders' clothing in hero image
+- Format: SVG or PNG with transparent background
+
+**4. Background Elements**
+- Gradient Overlay: Light cyan to deep blue
+- Optional: Subtle pattern or texture overlays
+
+---
+
+## 6. RESPONSIVE DESIGN SPECIFICATIONS
+
+### Breakpoints:
+```
+Mobile:    < 768px   (single column, stacked sections, full-width)
+Tablet:    768px - 1024px  (flexible 2-column, modified spacing)
+Desktop:   > 1024px  (full 2-column layouts, maximum spacing)
+```
+
+### Grid System:
+```
+Desktop Grid:
+  - 24-column CSS Grid
+  - Max-width: 1500px
+  - Gutter: 4vw responsive spacing
+  - Column gap: 11px
+
+Mobile Grid:
+  - 8-column CSS Grid
+  - Gutter: 6vw responsive spacing
+  - Full-width sections
+  - Stacked layout
+
+Key Grid Areas:
+  - Hero Text: Spans columns 2-12 (desktop)
+  - Hero Image: Spans columns 11-27 (desktop)
+  - Form: 50/50 split on desktop, stacked on mobile
+```
+
+### Responsive Typography:
+```
+H1 Desktop: 60-80px  →  Mobile: 32-40px
+H2 Desktop: 40-50px  →  Mobile: 28-32px
+Body Desktop: 16-18px  →  Mobile: 14-16px
+```
+
+---
+
+## 7. REUSABLE COMPONENTS TO BUILD
+
+### 1. Navigation/Header Component
+- Logo placement (left)
+- Horizontal navigation menu
+- Mobile hamburger menu (hidden on desktop)
+- Sticky/fixed positioning on scroll
+- Navigation link styling with hover states
+- Active page indicator
+
+### 2. Button Component
+```typescript
+Props:
+  - variant: 'primary' | 'secondary'
+  - size: 'sm' | 'md' | 'lg'
+  - disabled: boolean
+  - loading: boolean
+  - onClick: function
+
+Styles:
+  - Primary: #C9945C (gold/tan) background
+  - Secondary: transparent with border
+  - Rounded pill shape (border-radius: 9999px)
+  - Hover: darker color + shadow
+  - Active: scale effect
+  - Disabled: opacity 0.5
+```
+
+### 3. Form Input Component
+```typescript
+Props:
+  - type: 'text' | 'email' | 'textarea'
+  - label: string
+  - required: boolean
+  - error: string | null
+  - value: string
+  - onChange: function
+  - placeholder: string
+
+Styles:
+  - Bottom border only (no full border)
+  - Dark navy label
+  - Focus: color highlight
+  - Error: red text below field
+  - Required indicator: "(required)"
+```
+
+### 4. Checkbox Component
+```typescript
+Props:
+  - label: string
+  - checked: boolean
+  - onChange: function
+  - disabled: boolean
+
+Styles:
+  - Bordered checkbox style
+  - Dark navy text
+  - Hover highlight
+  - Checked state: filled
+```
+
+### 5. Radio Button Group Component
+```typescript
+Props:
+  - options: Array<{value, label}>
+  - selected: string
+  - onChange: function
+  - name: string
+
+Styles:
+  - Radio circles with borders
+  - Dark navy labels
+  - Selected: filled circle
+  - Hover: highlight effect
+```
+
+### 6. Image Component
+```typescript
+Props:
+  - src: string
+  - alt: string
+  - width: number
+  - height: number
+  - gradient: boolean
+  - textOverlay: string
+
+Features:
+  - Lazy loading
+  - Responsive srcset
+  - Gradient overlay option
+  - Text overlay capability
+  - Fallback image support
+```
+
+### 7. Grid Container Component
+```typescript
+Props:
+  - columns: number
+  - gap: string
+  - responsive: boolean
+  - children: React.ReactNode
+
+Features:
+  - CSS Grid based
+  - Responsive column adjustment
+  - Gap/gutter management
+  - Mobile/tablet/desktop breakpoints
+```
+
+### 8. Container/Wrapper Component
+```typescript
+Props:
+  - maxWidth: string
+  - padding: string
+  - children: React.ReactNode
+  - bg: string (background color)
+
+Default Values:
+  - maxWidth: 1500px
+  - padding: responsive (3xl on desktop, lg on mobile)
+  - bg: white
+```
+
+### 9. Typography Components
+- Heading1: H1 styles
+- Heading2: H2 styles
+- Heading3: H3 styles
+- BodyText: Body paragraph styles
+- SmallText: Footer/caption styles
+
+### 10. Footer Component
+```typescript
+Props:
+  - copyright: string
+  - links: Array<{label, url}>
+
+Styles:
+  - Centered alignment
+  - White background
+  - Dark navy text
+  - Small font size
+  - Podcast icon centered below
+```
+
+---
+
+## 8. FORM HANDLING & VALIDATION
+
+### Form Fields Details:
+
+**1. Name Field (Split)**
+```
+First Name:
+  - Required: true
+  - Type: text
+  - Max Length: 50
+  - Validation: Letters, spaces, hyphens only
+  
+Last Name:
+  - Required: true
+  - Type: text
+  - Max Length: 50
+  - Validation: Letters, spaces, hyphens only
+```
+
+**2. Email Field**
+```
+  - Required: true
+  - Type: email
+  - Validation: Valid email format
+  - Bonus: Newsletter mailing list signup
+  - Pattern: user@domain.com
+```
+
+**3. Subject Field**
+```
+  - Required: true
+  - Type: text
+  - Max Length: 100
+  - Placeholder: Optional hint text
+```
+
+**4. Message Field**
+```
+  - Required: true
+  - Type: textarea
+  - Rows: 5-8
+  - Max Length: 1000 (character count display optional)
+  - Placeholder: Optional hint text
+```
+
+**5. Newsletter Checkbox**
+```
+  - Label: "SIGN UP FOR NEWS AND UPDATES"
+  - Optional: false required
+  - Behavior: Auto-checks related email signup
+```
+
+**6. Pricing Radio Group**
+```
+  Option 1:
+    - Label: "I WANT FULL PRICE $100"
+    - Value: "full_price_100"
+    - Default: false
+  
+  Option 2:
+    - Label: "I WANT DISCOUNT $70 + FREE BOOK"
+    - Value: "discount_70"
+    - Default: false
+  
+  Behavior: Mutually exclusive (only one can be selected)
+```
+
+### Form Validation Logic:
+```
+1. Check all required fields are filled
+2. Validate email format
+3. Check pricing option is selected
+4. Trim whitespace from inputs
+5. Display error messages below fields
+6. Disable submit button while processing
+7. Show success message on submit
+8. Optionally redirect or reset form
+```
+
+### Form Submission:
+```
+Endpoint: (to be determined with client)
+Method: POST
+Headers: Content-Type: application/json
+Payload: {
+  firstName: string,
+  lastName: string,
+  email: string,
+  subject: string,
+  message: string,
+  newsletter: boolean,
+  pricingOption: 'full_price_100' | 'discount_70'
+}
+
+Response: Success/error message
+```
+
+---
+
+## 9. INTERACTIVE ELEMENTS & BEHAVIORS
+
+### Navigation Interactions:
+- **Hover**: Menu items change color to gold (#C9945C)
+- **Active**: Current page link highlighted
+- **Mobile**: Hamburger toggle opens/closes menu
+- **Smooth Scroll**: Links scroll to sections smoothly
+
+### Button Interactions:
+- **Hover**: Background darkens, subtle shadow appears
+- **Click**: Scale down animation (0.98)
+- **Active/Pressed**: Darker gold color, deeper shadow
+- **Disabled**: Opacity 0.5, cursor not-allowed
+- **Loading**: Show spinner, disable interaction
+
+### Form Interactions:
+- **Focus**: Input border/underline highlights in gold
+- **Error**: Red text below field, red border
+- **Success**: Green checkmark (optional)
+- **Checkbox**: Visual toggle, state change
+- **Submit**: Disabled during submission, show loading state
+
+### Page Scroll Behaviors:
+- **Lazy Load**: Images load as they come into view
+- **Smooth Scroll**: Anchors scroll smoothly to target
+- **Sticky Header**: Navigation stays visible on scroll
+- **Fade In**: Sections fade in as they appear
+
+---
+
+## 10. TECHNICAL STACK RECOMMENDATION
+
+### Core Framework:
+```
+React 18+ with Hooks
+TypeScript (strongly recommended for type safety)
+Next.js 13+ (optional, recommended for SSR/SEO)
+```
+
+### Styling Solutions (Choose One):
+```
+Option 1: Tailwind CSS (utility-first, easiest setup)
+Option 2: CSS Modules (scoped, component-level styling)
+Option 3: Styled Components (CSS-in-JS, dynamic styling)
+```
+
+### Form Management:
+```
+React Hook Form - lightweight, performant form library
+Zod OR Yup - schema validation library
+```
+
+### State Management:
+```
+For Simple State:
+  - React Context API + useReducer
+
+For Medium Complexity:
+  - Zustand (lightweight, easy to use)
+
+For Complex State:
+  - Redux Toolkit (only if needed)
+```
+
+### Routing:
+```
+React Router v6 (if not using Next.js)
+Next.js App Router (if using Next.js)
+```
+
+### API & Data Fetching:
+```
+Fetch API (built-in) OR
+Axios (more features, error handling)
+
+For form submission: React Query or SWR (optional)
+```
+
+### UI & Animation:
+```
+React Icons - icon library
+Framer Motion - animation library (optional)
+Tailwind CSS - already includes animations
+```
+
+### Utilities:
+```
+clsx or classnames - conditional className utility
+date-fns - date manipulation (if needed)
+```
+
+### Build & Deployment:
+```
+Build Tool: Vite or Next.js built-in
+Deployment: Vercel (recommended) OR Netlify OR AWS Amplify
+```
+
+---
+
+## 11. PROJECT DIRECTORY STRUCTURE
+
+```
+compete-training-academy/
+├── public/
+│   ├── images/
+│   │   ├── hero-image.jpg
+│   │   ├── products/
+│   │   │   ├── daily-journal.jpg
+│   │   │   ├── winners-manual.jpg
+│   │   │   ├── dream-szn.jpg
+│   │   │   └── winning-mindset-book.jpg
+│   │   └── logo.svg
+│   ├── favicon.ico
+│   └── robots.txt
+│
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── FormSection.tsx
+│   │   ├── ProductShowcase.tsx
+│   │   ├── Footer.tsx
+│   │   ├── shared/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── Checkbox.tsx
+│   │   │   ├── RadioGroup.tsx
+│   │   │   ├── Container.tsx
+│   │   │   ├── Grid.tsx
+│   │   │   ├── Image.tsx
+│   │   │   └── Typography.tsx
+│   │   └── layouts/
+│   │       └── MainLayout.tsx
+│   │
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   ├── GetBetter.tsx
+│   │   ├── Train.tsx
+│   │   ├── MindsetCoaching.tsx
+│   │   ├── Certifications.tsx
+│   │   ├── Library.tsx
+│   │   ├── Speaking.tsx
+│   │   ├── Contact.tsx
+│   │   └── Events.tsx
+│   │
+│   ├── hooks/
+│   │   ├── useForm.ts
+│   │   └── useScrollPosition.ts
+│   │
+│   ├── types/
+│   │   ├── index.ts
+│   │   └── forms.ts
+│   │
+│   ├── utils/
+│   │   ├── validation.ts
+│   │   ├── api.ts
+│   │   └── constants.ts
+│   │
+│   ├── constants/
+│   │   ├── colors.ts
+│   │   ├── typography.ts
+│   │   ├── spacing.ts
+│   │   └── navigation.ts
+│   │
+│   ├── styles/
+│   │   ├── globals.css
+│   │   ├── variables.css
+│   │   └── tailwind.config.js (if using Tailwind)
+│   │
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── main.tsx
+│
+├── tests/
+│   ├── components/
+│   └── utils/
+│
+├── .env.example
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── vite.config.ts (or next.config.js)
+└── README.md
+```
+
+---
+
+## 12. DESIGN SYSTEM TOKENS
+
+### Spacing Scale:
+```css
+--space-xs: 4px;
+--space-sm: 8px;
+--space-md: 16px;
+--space-lg: 24px;
+--space-xl: 32px;
+--space-2xl: 48px;
+--space-3xl: 64px;
+```
+
+### Color Tokens:
+```css
+--color-navy: #003366;
+--color-gold: #C9945C;
+--color-light-cyan: #B3E5FC;
+--color-deep-blue: #0D47A1;
+--color-white: #FFFFFF;
+--color-gray-light: #F5F5F5;
+--color-black: #000000;
+```
+
+### Border Radius:
+```css
+--radius-sm: 4px;
+--radius-md: 8px;
+--radius-lg: 16px;
+--radius-full: 9999px; /* pill buttons */
+```
+
+### Shadows:
+```css
+--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+--shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+```
+
+### Transitions:
+```css
+--duration-200: 200ms;
+--duration-300: 300ms;
+--easing-default: ease-in-out;
+--transition-default: all 300ms ease-in-out;
+```
+
+---
+
+## 13. SEO & META INFORMATION
+
+### Home Page Meta Tags:
+```html
+<title>Compete Training Academy | Faith. Mindset. Performance.</title>
+<meta name="description" content="Discover personal growth through mindset coaching. Pre-order 'Get Better' by Jordan Delks & Trey Kaufman-Renn. Training resources for athletes and coaches.">
+<meta name="keywords" content="mindset coaching, personal development, training academy, get better book, faith mindset performance">
+<meta name="og:title" content="Compete Training Academy | Faith. Mindset. Performance.">
+<meta name="og:description" content="Transform your mindset and performance. Mindset coaching and training resources.">
+<meta name="og:image" content="[URL to hero image]">
+```
+
+### Structured Data Schema:
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Compete Training Academy",
+  "url": "https://www.competetrainingacademy.org",
+  "logo": "https://www.competetrainingacademy.org/logo.svg",
+  "description": "Mindset coaching and training academy",
+  "sameAs": [
+    "https://facebook.com/competeacademy",
+    "https://instagram.com/competeacademy",
+    "https://twitter.com/competeacademy"
+  ],
+  "founder": [
+    {"@type": "Person", "name": "Jordan Delks"},
+    {"@type": "Person", "name": "Trey Kaufman-Renn"}
+  ]
+}
+```
+
+---
+
+## 14. MIGRATION & DEVELOPMENT CHECKLIST
+
+### Pre-Development:
+- [ ] Export all images from Squarespace
+- [ ] Collect all page content and copywriting
+- [ ] Document all form submission endpoints
+- [ ] Extract exact color values and fonts
+- [ ] Create content inventory spreadsheet
+- [ ] Map all internal/external links
+- [ ] Plan URL structure and redirects
+
+### Development Phase:
+- [ ] Setup React project with chosen stack
+- [ ] Configure TypeScript and linting
+- [ ] Create design system tokens
+- [ ] Build component library
+- [ ] Implement responsive grid system
+- [ ] Create all reusable components
+- [ ] Build page templates
+- [ ] Implement form handling
+- [ ] Add form validation
+- [ ] Setup API integration
+- [ ] Implement navigation
+- [ ] Add lazy loading for images
+
+### Testing Phase:
+- [ ] Unit tests for components
+- [ ] Integration tests for forms
+- [ ] Cross-browser testing (Chrome, Firefox, Safari, Edge)
+- [ ] Mobile responsiveness testing
+- [ ] Accessibility testing (WCAG 2.1)
+- [ ] Performance testing (Core Web Vitals)
+- [ ] Form submission testing
+- [ ] Link validation
+
+### Pre-Deployment:
+- [ ] Setup SEO (meta tags, sitemap, robots.txt)
+- [ ] Setup analytics (Google Analytics, etc.)
+- [ ] Optimize images (compression, format)
+- [ ] Minify CSS and JavaScript
+- [ ] Setup error tracking
+- [ ] Create 404 page
+- [ ] Setup redirects from old site
+- [ ] Test email notifications
+- [ ] Create backup strategy
+
+### Deployment:
+- [ ] Configure hosting (Vercel/Netlify/AWS)
+- [ ] Setup SSL certificate
+- [ ] Configure domain DNS
+- [ ] Setup CI/CD pipeline
+- [ ] Deploy to staging
+- [ ] Final QA testing
+- [ ] Deploy to production
+- [ ] Monitor for errors
+
+### Post-Launch:
+- [ ] Monitor performance metrics
+- [ ] Fix any reported bugs
+- [ ] Optimize based on analytics
+- [ ] Update email integrations
+- [ ] Train client on admin tasks (if applicable)
+- [ ] Schedule regular backups
+- [ ] Plan future feature rollout
+
+---
+
+## 15. HOSTING & DEPLOYMENT RECOMMENDATIONS
+
+### Option 1: Vercel (RECOMMENDED)
+- **Best for**: Next.js applications
+- **Advantages**: Zero-config, automatic deployments, great performance
+- **Pricing**: Free tier available, then $20+/month
+- **Features**: Built-in analytics, edge functions, serverless
+
+### Option 2: Netlify
+- **Best for**: React + static sites
+- **Advantages**: Great CMS support, simple deploys, good free tier
+- **Pricing**: Free tier available, then $19+/month
+- **Features**: Functions, forms handling, analytics
+
+### Option 3: AWS Amplify
+- **Best for**: Enterprise/scalable apps
+- **Advantages**: Powerful, scalable, AWS ecosystem
+- **Pricing**: Pay as you go
+- **Features**: CI/CD, hosting, API backend
+
+### Option 4: DigitalOcean
+- **Best for**: Cost-effective option
+- **Advantages**: Affordable, simple deployment
+- **Pricing**: $5-12/month for VPS
+- **Setup**: More manual than others
+
+**Recommended**: **Vercel** (if using Next.js) or **Netlify** (if using React)
+
+---
+
+## 16. ESTIMATED PROJECT TIMELINE
+
+```
+Week 1: Project Setup & Architecture
+  - Setup React/TypeScript project
+  - Configure build tools and linting
+  - Create directory structure
+  - Setup design system and tokens
+
+Week 1.5: Design System & Component Library
+  - Build typography components
+  - Build form components (Input, Button, etc.)
+  - Build layout components (Grid, Container)
+  - Build utility components
+
+Week 2: Homepage Implementation
+  - Build Hero section
+  - Build Form section
+  - Build Footer
+  - Integrate components
+
+Week 2-3: Additional Pages
+  - About page
+  - Get Better book page
+  - Train/Coaching pages
+  - Certifications page
+  - Library page
+  - Speaking page
+  - Contact page
+  - Events page
+
+Week 3: Form Integration & Backend
+  - Connect form submission to backend
+  - Email notification setup
+  - Form validation logic
+  - Error handling
+
+Week 3.5: Responsive Design & Testing
+  - Test on all breakpoints
+  - Mobile optimization
+  - Tablet optimization
+  - Fix responsive issues
+  - Cross-browser testing
+
+Week 4: SEO & Performance
+  - Add meta tags
+  - Implement structured data
+  - Image optimization
+  - Code splitting
+  - Performance optimization
+  - Accessibility testing
+
+Week 4.5: Deployment & Migration
+  - Setup hosting account
+  - Configure domain/DNS
+  - Deploy to production
+  - Setup redirects from old site
+  - Final QA testing
+  - Monitor for issues
+
+**Total Duration**: 10-12 weeks (depending on complexity and iterations)
+```
+
+---
+
+## 17. KEY SELLING POINTS FOR CLIENT
+
+### Why React Over Squarespace?
+
+1. **Performance**
+   - Faster page load times
+   - Optimized bundle sizes
+   - Better Core Web Vitals scores
+
+2. **Customization**
+   - Complete design control
+   - No platform limitations
+   - Custom features and functionality
+
+3. **Scalability**
+   - Easy to add features (courses, community, membership)
+   - Handle increased traffic
+   - Future-proof technology
+
+4. **Cost Savings**
+   - Eliminate Squarespace monthly fees (~$12-33/month)
+   - Cheaper hosting options available
+   - No platform lock-in
+
+5. **Analytics & Data**
+   - Full control over tracking
+   - Custom analytics dashboards
+   - Better insights into user behavior
+
+6. **Mobile Experience**
+   - Superior mobile responsiveness
+   - Native app-like feel (if desired)
+   - Faster mobile performance
+
+7. **SEO Control**
+   - Complete meta tag control
+   - Better structured data
+   - Faster crawling and indexing
+
+8. **Maintenance**
+   - Any React developer can maintain it
+   - No vendor lock-in
+   - Clear code structure
+
+9. **Modern Technology**
+   - Industry-standard tech stack
+   - Easier to hire developers
+   - Long-term maintainability
+
+10. **Brand Control**
+    - Own your codebase
+    - No forced platform updates
+    - Infinite customization
+
+### Estimated Annual Savings:
+```
+Squarespace: $144-396/year
+Vercel (free tier): $0-10/year
+Total savings: $130-400/year + improved performance
+```
+
+---
+
+## 18. ADDITIONAL FEATURES TO CONSIDER
+
+### Short-term:
+- Email newsletter automation (Mailchimp/SendGrid integration)
+- Social media links/feeds
+- Testimonials/reviews section
+- Blog for mindset content
+- Resource downloads
+
+### Medium-term:
+- Online course platform
+- Membership area
+- Community forum
+- Podcast integration (noticed podcast icon)
+- Email capture optimization
+- A/B testing for conversions
+
+### Long-term:
+- E-commerce for books/products
+- Payment processing (Stripe/PayPal)
+- Customer dashboard
+- CRM integration
+- Advanced analytics
+- Mobile app version
+
+---
+
+## 19. CONTENT INVENTORY
+
+### Key Copy:
+
+**Brand Tagline**:
+"Faith. Mindset. Performance."
+
+**Hero Headline**:
+"GET BETTER - PRE-ORDER NOW"
+
+**Book Description**:
+"Get Better: Actualize Your True Self is a candid look at what it takes to grow from the inside out. Written through the lived experience of mindset coach Jordan Delks and athlete Trey Kaufman-Renn, this book brings the reader into the real work 

@@ -1,0 +1,7 @@
+<svg width="800" height="640" viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dream Szn placeholder">
+  <rect width="800" height="640" fill="#d7c6b4"/>
+  <rect x="190" y="80" width="420" height="500" rx="12" fill="#f9f9f9"/>
+  <rect x="170" y="80" width="12" height="500" fill="#5d5d5d"/>
+  <text x="400" y="280" text-anchor="middle" fill="#003366" font-size="44" font-family="Arial">Dream Szn</text>
+  <text x="400" y="332" text-anchor="middle" fill="#003366" font-size="28" font-family="Arial">Strategic Plan</text>
+</svg>

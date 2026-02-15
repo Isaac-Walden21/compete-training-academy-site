@@ -1,0 +1,7 @@
+<svg width="800" height="640" viewBox="0 0 800 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Winners manual placeholder">
+  <rect width="800" height="640" fill="#d7bfa6"/>
+  <rect x="220" y="95" width="360" height="455" rx="14" fill="#fff"/>
+  <rect x="200" y="95" width="14" height="455" fill="#444"/>
+  <text x="400" y="285" text-anchor="middle" fill="#003366" font-size="40" font-family="Arial">COMPETE</text>
+  <text x="400" y="330" text-anchor="middle" fill="#003366" font-size="28" font-family="Arial">Winners Manual</text>
+</svg>
