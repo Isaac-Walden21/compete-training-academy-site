@@ -54,7 +54,7 @@ export function CinematicHero() {
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
           {hero.kicker}
         </p>
-        <h1 className="mt-4 font-display text-6xl font-semibold uppercase leading-[0.92] tracking-[0.06em] text-white md:text-7xl lg:text-8xl xl:text-9xl">
+        <h1 className="mt-4 font-display text-4xl font-semibold uppercase leading-[0.92] tracking-[0.06em] text-white sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
           {hero.headline}
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
