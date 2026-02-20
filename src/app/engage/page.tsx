@@ -44,27 +44,30 @@ export default function EngagePage() {
           <h2 className="mt-1 font-display text-4xl font-semibold text-navy md:text-5xl">{eventContent.title}</h2>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-navy/85 md:text-base">{eventContent.intro}</p>
 
-          <StaggerItems className="mt-6 grid gap-4 md:grid-cols-2">
+          <StaggerItems className="mt-6 grid gap-6">
             {events.map((event, index) => (
-              <article key={event.id} className="sleek-lift rounded-2xl border border-navy/10 bg-white p-5 shadow-md">
-                <Image
-                  src={index % 2 === 0 ? "/images/source/12_Events_Screenshot_1.png" : "/images/source/13_Events_Screenshot_2.png"}
-                  alt={`${event.title} preview`}
-                  width={800}
-                  height={520}
-                  className="mb-4 h-44 w-full rounded-xl border border-navy/10 object-cover"
-                />
-                <p
-                  className={cn(
-                    "inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em]",
-                    event.status === "upcoming" ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-600"
-                  )}
-                >
-                  {event.status}
-                </p>
-                <h3 className="mt-3 font-display text-3xl font-semibold text-navy">{event.title}</h3>
-                <p className="mt-2 text-sm font-medium text-navy/80">{event.date} • {event.location}</p>
-                <p className="mt-3 text-sm leading-relaxed text-navy/80">{event.description}</p>
+              <article key={event.id} className="sleek-lift flex flex-col overflow-hidden rounded-2xl border border-navy/10 bg-white shadow-md sm:flex-row">
+                <div className="relative aspect-[4/3] w-full shrink-0 sm:aspect-auto sm:w-64">
+                  <Image
+                    src={index % 2 === 0 ? "/images/source/12_Events_Screenshot_1.png" : "/images/source/13_Events_Screenshot_2.png"}
+                    alt={`${event.title} preview`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex-1 p-5">
+                  <p
+                    className={cn(
+                      "inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em]",
+                      event.status === "upcoming" ? "bg-emerald-100 text-emerald-700" : "bg-slate-100 text-slate-600"
+                    )}
+                  >
+                    {event.status}
+                  </p>
+                  <h3 className="mt-3 font-display text-3xl font-semibold text-navy">{event.title}</h3>
+                  <p className="mt-2 text-sm font-medium text-navy/80">{event.date} • {event.location}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-navy/80">{event.description}</p>
+                </div>
               </article>
             ))}
           </StaggerItems>
