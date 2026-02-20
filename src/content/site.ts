@@ -15,6 +15,80 @@ export const bookDescription = {
     "Jordan and Trey show how growth begins with clarity. You learn who you are, what drives you, and how your design shapes the path ahead. From there, they guide you through the process of forming a clear direction so your actions match the person you want to become. They share stories of training sessions, honest reflections, and moments when they had to reset and make new choices. Each chapter shows how mindset shifts can influence performance, relationships, and daily habits."
 };
 
+export const homePage = {
+  hero: {
+    kicker: "COMPETE TRAINING ACADEMY",
+    headline: "FAITH. MINDSET. PERFORMANCE.",
+    subline: "Equipping athletes, coaches, and leaders to compete at the highest level.",
+    cta: "Explore Our Mission"
+  },
+  mission: {
+    kicker: "WHO WE ARE",
+    headline: "The Compete Standard",
+    body: "Compete exists to equip athletes, coaches, and professionals with tools that connect faith, mindset, and performance.",
+    pillars: [
+      {
+        title: "Faith",
+        description: "The foundation. Everything we build starts here."
+      },
+      {
+        title: "Mindset",
+        description: "Ownership of how you think, prepare, and respond."
+      },
+      {
+        title: "Performance",
+        description: "Excellence as the standard, not the exception."
+      }
+    ]
+  },
+  services: {
+    kicker: "WHAT WE DO",
+    headline: "Built for Growth",
+    items: [
+      {
+        title: "Training",
+        description: "Structured sessions for athletes and teams focused on fundamentals, consistency, and game-speed confidence.",
+        href: "/services"
+      },
+      {
+        title: "Mindset Coaching",
+        description: "Personal and group coaching that helps clients identify limiting patterns and build new operating standards.",
+        href: "/services"
+      },
+      {
+        title: "Certifications",
+        description: "Certification tracks for coaches and leaders who want to teach the Compete framework with confidence.",
+        href: "/services"
+      }
+    ]
+  },
+  bookFeature: {
+    kicker: "NOW AVAILABLE",
+    headline: "Get Better: Actualize Your True Self",
+    authors: "Jordan Delks & Trey Kaufman-Renn",
+    cta: "Pre-Order Now"
+  },
+  founder: {
+    kicker: "THE FOUNDER",
+    headline: "Jordan Delks",
+    body: "Jordan Delks started Compete Training Academy in 2016 with a clear conviction: real performance starts with who you are, not just what you do. As a mindset coach, speaker, and author, he has spent nearly a decade helping athletes, coaches, and leaders build systems rooted in faith, discipline, and purpose.",
+    cta: "Meet the Team",
+    href: "/founders"
+  },
+  eventsSection: {
+    kicker: "WHAT'S NEXT",
+    headline: "Upcoming Events"
+  },
+  closingCta: {
+    headline: "Ready to Compete?",
+    subline: "Start with a conversation. Book a session, explore our services, or grab the book.",
+    primaryCta: "Book a Session",
+    primaryHref: "/book-session",
+    secondaryCta: "Pre-Order Get Better",
+    secondaryHref: "/get-better"
+  }
+};
+
 export const pageContent = {
   founders: {
     title: "Jordan and Courtney Delks",
